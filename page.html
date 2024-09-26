@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A landing page for motivational and inspirational quotes">
+    <title>Motivational Quotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Get Inspired Daily!</h1>
+            <p class="text-xl mb-6">Find motivation and inspiration to help you achieve your dreams.</p>
+            <button class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-400 transition" onclick="showRandomQuote()">Get a Quote</button>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="container mx-auto my-12 text-center">
+        <h2 class="text-3xl font-bold mb-6">Motivational Quote of the Day</h2>
+        <div id="quoteBox" class="bg-white p-8 shadow-md rounded text-xl italic max-w-3xl mx-auto">
+            "Your limitation—it's only your imagination."
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-6 rounded hover:bg-blue-400 transition" onclick="showRandomQuote()">Show Another Quote</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-gray-200 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
+            <p class="text-lg max-w-2xl mx-auto">
+                We believe that a little inspiration every day can go a long way. Our mission is to provide you with a daily dose of motivational and inspirational quotes to help you stay on track and achieve your goals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-600 text-white py-4 text-center">
+        &copy; 2024 Motivation Quotes | All Rights Reserved
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
